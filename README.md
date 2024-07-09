@@ -3,4 +3,5 @@
 here is step by step - commit after commit show of TDD development.
 Red - Green - Refactor.
 
-# 1. Step: Write the minimal breaking test.
+# 1. Step: red: Write the minimal breaking test.
+# 2. Step: green: Write code to make test working.
