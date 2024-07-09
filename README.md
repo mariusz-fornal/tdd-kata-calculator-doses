@@ -7,3 +7,5 @@ Red - Green - Refactor.
 # 2. Step: green: Write code to make test working.
 # 3. Step: refactor: Refactor the code - nothing to do, going next to the red.
 # 4. Step: red: Write the next minimal breaking test.
+# 5. Step: green: Write code to make test working.
+...
