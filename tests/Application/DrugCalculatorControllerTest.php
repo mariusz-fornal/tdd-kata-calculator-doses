@@ -25,5 +25,7 @@ class DrugCalculatorControllerTest extends WebTestCase
         );
 
         $this->assertEquals(Response::HTTP_OK, $this->httpClient->getResponse()->getStatusCode());
+        $this->assertJson($this->httpClient->getResponse()->getContent());
+        $this->assertEquals(['oneDose' => 10], json_decode($this->httpClient->getResponse()->getContent(), true));
     }
 }
