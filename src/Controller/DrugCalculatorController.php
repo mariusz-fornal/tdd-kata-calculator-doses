@@ -13,6 +13,8 @@ class DrugCalculatorController extends AbstractController
     #[Route(path: '/calculate-dose', name: 'calculate_dose')]
     public function calculateDose(Request $request): JsonResponse
     {
-        return new JsonResponse(['oneDose' => 10], Response::HTTP_OK);
+        $weight = $request->get('weight');
+
+        return new JsonResponse(['oneDose' => $weight * 0.15], Response::HTTP_OK);
     }
 }
